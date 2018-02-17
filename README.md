@@ -1,23 +1,8 @@
-# Parsing and Displaying a Markdown File with CommonMark
+# Tufte CSS
+<p class="subtitle">Dave Liepmann</p>
 
-## What's This Do?
-Renders a markdown file as HTML and displays it. JavaScript loads a markdown file, parses it and displays it as HTML inside the index.html file. The index.html file includes 2 Javascript files:
+Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte’s books and handouts. Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.
 
-* The first -- ```js/stmd.js``` -- loads the [CommonMark](http://commonmark.org) library which can convert CommonMark (standardized markdown) to HTML. 
+Tufte CSS was created by [Dave Liepmann](http://www.daveliepmann.com) and is now an Edward Tufte project. The original idea was cribbed from Tufte-LaTex and R Markdown’s Tufte Handout format. We give hearty thanks to all the people who have contributed to those projects.
 
-* The second -- ```render.js``` -- loads a specified markdown file (default is ```README.md```) via XHR then parses it and renders it with the CommonMark JS library.
-
-## Why?
-I wanted a way to display markdown files as HTML on any website -- but in particular, I wanted to be able to use Github pages to render the README.md file for a repo. Mainly so I could use a repo as a way to create installation guides and other how-to's in a single markdown file.
-
-I also wanted a way that was backend agnostic so it could all be handled via JavaScript without any server requirements.
-
-## How to use
-1. Throw the ```index.html``` file into the same folder as the ```README.md``` (or other markdown file)
-2. Add the ```js``` folder (or just place the ```render.js``` and ```stmd.js```) in the same folder as the index.html. You may need to adjust the paths if you move the js files or the markdown file is in a different directory than the index.html file.
-3. Open the index.html file. (Uses XHR so you have to view through a web server).
-
-## To do
-1. Add more CSS to style this sucker better
-
-[Back to the repo](https://github.com/sawmac/display-markdown)
+If you see anything that Tufte CSS could improve, we welcome your contribution in the form of an issue or pull request on the GitHub project: tufte-css. Please note the contribution guidelines.
